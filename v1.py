@@ -1,7 +1,8 @@
+from lib2to3.pgen2.token import OP
 import os
 import openai
-
-openai.api_key = "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"
+from keys import OPEN_AI_API_KEY
+openai.api_key = OPEN_AI_API_KEY
 
 
 def run_model(news_text):
