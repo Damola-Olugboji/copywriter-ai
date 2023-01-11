@@ -1,7 +1,7 @@
 import os
 import openai
 
-openai.api_key = "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"
+openai.api_key = "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"
 
 
 def run_model(news_text):
