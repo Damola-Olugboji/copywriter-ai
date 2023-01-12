@@ -66,9 +66,9 @@ def main():
     test = Article("inflation_hedging.txt")
     
     test.introduction(article_title)
-    time.sleep(3)
+    time.sleep(5)
     test.mainbody(article_title)
-    time.sleep(3)
+    time.sleep(5)
     test.conclusion(article_title)
 
 
