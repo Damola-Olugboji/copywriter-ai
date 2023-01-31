@@ -14,7 +14,7 @@ class Article:
 
     def introduction(self, theme):
         res = v1.prompt_model("you're an very well connected individual with the ability to call various industry experts to help you: your goal is below: \n",
-            f"create a list for an article titled: {theme} but make each reason one word and put it in a python list"
+            f"create a list for an article titled: {theme} but put the reasons in a python list"
         )
         start = res.find("[")
         end = res.rfind("]")
@@ -62,8 +62,8 @@ class Article:
 
 
 def main():
-    article_title = "8 best ways you can hedge against inflation"
-    test = Article("inflation_hedging.txt")
+    article_title = "5 Reasons to buy gold"
+    test = Article("./articles/gold_buying.txt")
     
     test.introduction(article_title)
     time.sleep(5)
